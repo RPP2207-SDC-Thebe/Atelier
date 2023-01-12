@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest --env=jsdom",
+    "test-qanda": "jest client.questions.test.js",
+    "test-qanda-coverage": "jest --coverage client.questions.test.js",
     "build": "webpack --mode=production --node-env=production",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
